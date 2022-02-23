@@ -2,11 +2,11 @@
 # Awesome Sound Source Separation: [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A curated list of source separation, inspired by [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision).
 
+This list mainly focuses on deep learning based models. It aims to introduce *milestones* works and essential things for beginner researchers(including myself).
+
 This list may contain incorrect informations and I don't want this list to be exhaustive. If I miss **important** papers or anyone found incorrect informations, please let me know via Github issue.
 
-This list mainly focuses on deep learning based models. 
-
-** WIP: This list is in construction. ** 
+**WIP: This list is in construction.** 
 
 ## Contributing
 
@@ -29,19 +29,18 @@ Separating a mixture into sources. Major researches are about sound source separ
 
 * [An Overview of Lead and Accompaniment Separation in Music](https://arxiv.org/abs/1804.08300) - Z. Rafii et al., 2018
 
-
-
 ## Papers
 
 ### supervised source separation
 
-* deep clustering
-* conv-tasnet / tasnet / dual-path
+* [Deep clustering: Discriminative embeddings for segmentation and separation](https://ieeexplore.ieee.org/abstract/document/7471631) - J. Hershey et al., ICASSP 2016
+* [Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation](https://arxiv.org/abs/1809.07454) - Yi Luo et al., TASLP 2019
 * wave-u-net
-* Permutation invariant training of deep models for speaker-independent multi-talker speech separation
+* [Permutation invariant training of deep models for speaker-independent multi-talker speech separation](https://arxiv.org/abs/1607.00325) - D. Yu et al., ICASSP 2017
 * Voice Separation with an Unknown Number of Multiple Speakers
-* demucs
-* HIERARCHICAL MUSICAL INSTRUMENT SEPARATION
+* [Demucs](https://github.com/facebookresearch/demucs) - A. Défossez, 2021, 
+	* https://arxiv.org/abs/2111.03600 (version 3)
+* [HIERARCHICAL MUSICAL INSTRUMENT SEPARATION](https://program.ismir2020.net/static/final_papers/105.pdf) - E. Manilow et al., ISMIR 2020.
 
 ### source separation with additional information
 
@@ -49,29 +48,31 @@ Separating a mixture into sources. Major researches are about sound source separ
 * AUDIO QUERY-BASED MUSIC SOURCE SEPARATION
 * Weakly informed audio source separation
 * Conditioned Source Separation for Musical Instrument Performances.
+* [Co-separating sounds of visual objects](https://arxiv.org/abs/1904.07750) - R. Gao et al., ICCV 2019
 
 ### unsupervised source separation
 
-* MixIT
+* [Unsupervised Sound Separation Using Mixture Invariant Training](https://arxiv.org/abs/2006.12701) - S. Wisdom et al., NeurIPS 2020.
 
 ### universal sound source separation
 
-* Universal sound separation
+* [Universal sound separation](https://arxiv.org/abs/1905.03330) - I. Kavalerov, WASPAA 2019.
 
-### source localization based 
+### source localization based method
 
-* The Cone of Silence: Speech Separation by Localization
+* [The Cone of Silence: Speech Separation by Localization](https://arxiv.org/abs/2010.06007) - T. Jenrungrot, NeurIPS 2020.
 
 ### Evaluation Metrics
 
-* Performance measurement in blind audio source separation
-* SDR – Half-baked or Well Done?
+* [Performance measurement in blind audio source separation](https://ieeexplore.ieee.org/document/1643671) - E. Vincent, TASLP 2006
+* [SDR – Half-baked or Well Done?](https://ieeexplore.ieee.org/abstract/document/8683855) - J. Le Roux, ICASSP 2019.
 
 ## Datasets
 
-* MUSDB18
-* wsj0
-* WHAM!
+* MUSDB18 (for music)
+* wsj0 (for speech)
+* WHAM! 
+* FUSS (for universal source separation)
 
 ## Open-Source Projects
 
